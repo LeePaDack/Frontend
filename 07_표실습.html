@@ -1,8 +1,33 @@
 <!DOCTYPE html>
+<!--
+코드에서 스타일을 입힐 때 
+각각의 코드 안에 style 을 작성 해주는 것 보다
+<head></head> 안에 <style> 이라는 태그를 만들어서
+내가 한번에 꾸미고자 하나는 태그 이름과 꾸밀 내용을 {} 안에 작성해주는 것이
+더 우선순위가 됨
+
+<tr style="background-color: rosybrown;">
+↑ 처럼 작성한 것 보다 
+↓ 처럼 작성한 것이 더 우선으로 디자인을 입힘
+<head>
+    <style>
+            th{
+                background-color: coral;
+            }
+    </style>
+</head>
+
+-->
 <html lang="ko">
     <head>
         <title>음식</title>
         <meta charset="UTF-8">
+        <!-- 변경하고자 하는 스타일이 여러개 라면 , 를 작성해서 한번에 적용 가능-->
+        <!-- <style>
+            th,h3{
+                background-color: coral;
+            }
+        </style> -->
     </head>
 
     <body>
@@ -38,6 +63,64 @@
 
 
         </table>
+
+
+        <h2>게시판</h2>
+        <ul>
+            <li>
+                <h3>게시물 제목 1</h3>
+                <p>
+                    작성자: 사용자1 <br>
+                    작성일: 2024-05-07 <br>
+                    내용 : 이 게시물은 첫 번째 게시물입니다.
+                </p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <h3>게시물 제목 2</h3>
+            
+                <p>
+                    작성자: 사용자2 <br>
+                    작성일: 2024-05-06 <br>
+                    내용: 이 게시물은 두 번째 게시물입니다.
+                </p>
+            </li>
+        </ul>
+
+        <h2>게시물 목록 (테이블)</h2>
+        <table border="1" style=" width: 100%; border-collapse: collapse;">
+            <tr style="background-color: rosybrown;">
+                <th>게시물 제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>내용</th>
+            </tr>
+            <tr>
+                <td>게시물 제목 1</td>
+                <td>사용자 1</td>
+                <td>2024-05-07</td>
+                <td>이 게시물은 첫 번째 게시물입니다.</td>
+            </tr>
+            <tr>
+                <td>게시물 제목 2</td>
+                <td>사용자 2</td>
+                <td>2024-05-06</td>
+                <td>이 게시물은 두 번째 게시물입니다.</td>
+            </tr>
+
+        </table>
+
+        <hr>
+        <hr>
+        <hr>
+
+
+
+
+
+
 
 
 
