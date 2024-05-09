@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>iframe 태그</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h2>iframe 사용하기</h2>
+    <pre>
+        iframe 은 웹페이지나 웹에 있는 정보를 포함해서 보여주는 태그
+        HTML5 로 오면서 사용을 많이 하지 않음
+        HTML 을 포함해서 보여주기도 함
+        
+            src="" 를 사용해서 불러올 주소 설장이나 위치 설정
+            width="" : 가로 길이 지정
+            height="" : 세로 길이 지정
+            frameborder="" : 테두리 지정, 0 으로 설정하면 테두리 없음
+    </pre>
+
+    <pre>
+        iframe 외부에서 태그해서 볼 수 없도록 지정해 놓으면
+        엑스박스(안보이는것)로 되면서 홈페이지에서 연결을 거부했습니다. 라고 나옴
+        외부에서 볼 수 있도록 지정해 놓으면 HTML 에서 
+        src에서 작성한 무사히 홈페이지를 볼 수 있음
+    </pre>
+
+    <iframe src="https://www.naver.com" width="800px" height="600px" frameborder="0"></iframe>
+    <iframe src="https://kh-academy.co.kr" width="800px" height="600px" frameborder="0"></iframe>
+    <iframe src="01_글자관련태그.html" width="500px" height="800px"></iframe>
+
+
+
+
+  </body>
+</html>
