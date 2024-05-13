@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>input 실습</title>
+    <meta charset="UTF-8" />
+    <style>
+        .topping{
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <br>
+    <div class="컨테이너">
+        <h1> 피자 주문 내역</h1>
+        <label>
+            고객명 : 
+            <input type="text" name="clientName">
+        </label>
+        <br><br>
+        <label>
+            전화번호 : 
+            <input type="number" name="clientPhone">
+        </label>
+        <br><br>
+        <label>
+            Email :
+            <input type="email" name="clientEmail">
+        </label>
+    </div>
+    <br>
+    <div>
+        <input type="radio" name="size" value="size"> Small
+        <br><br>
+        <input type="radio" name="size" value="size"> Medium
+        <br><br>
+        <input type="radio" name="size" value="size"> Large
+    </div>
+    <br>
+    <div class="topping">
+        <input type="checkbox" name="topping" value="topping"> 베이컨
+        <br><br>
+        <input type="checkbox" name="topping" value="topping"> 치즈
+        <br><br>
+        <input type="checkbox" name="topping" value="topping"> 양파
+        <br><br>
+        <input type="checkbox" name="topping" value="topping"> 버섯
+    </div>
+    <br><br>
+    <div>
+        <label>
+            희망배송시간 : 
+            <input type="time" name="wishTime" value="wishTime">
+        </label>
+    </div>
+    <br><br>
+    <div>
+        <label>
+            배송시요청사항:
+            <input type="text" name="요청사항">
+        </label>
+    </div>
+    <br><br>
+    <button type="submit">주문하기</button>
+
+  </body>
+</html>
