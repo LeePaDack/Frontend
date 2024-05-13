@@ -15,8 +15,7 @@
             color: white;
             border-radius: 5px;
             border: none;
-            width: 20%;
-            height: 30%;
+            padding: 10px 20px;
         }
         .목록{
             background-color: white;          
@@ -24,32 +23,41 @@
         }
         input{
             width: 90%;
+            border-radius: 5px;
+            border-color: #e3dada;
+        }
+        .컨테이너{
+            padding: 0px 50px;
         }
     </style>
   </head>
   <body>
     <div class="컨테이너">  
-        <h1>블로그 설문 조사</h1>
+        <br>
         <form class="목록">
-            <p>이름:</p>
-            <input type="text" name="이름">
             <br>
-            <p>이메일:</p>
-            <input type="email" name="이메일">
-            <br>
-            <p>나이:</p>
-            <input type="number" name="나이">
-            <br>
-            <p>의견</p>
-            <input type="text" name="의견">
+            <h1>블로그 설문 조사</h1>
+            <label>이름:<br>
+                <input type="text" name="이름">
+            </label>
+            <br><br>
+            <label>이메일:<br>
+                <input type="email" name="이메일">
+            </label>
+            <br><br>
+            <label>나이:<br>
+                <input type="number" name="나이">
+            </label>
+            <br><br>
+            <label>의견:<br>
+                <input type="text" name="의견">
+            </label>
             <br>
             <br>
             <button type="submit">제출</button>
             <br><br>
         </form>
         <br><br>
-
-
 
     </div>
 
