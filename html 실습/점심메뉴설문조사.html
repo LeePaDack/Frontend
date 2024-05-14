@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>피자 주문하기</title>
+    <meta charset="UTF-8" />
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        body{
+            background-color: #f9f9f9;
+        }
+        .컨테이너{
+            width: 70%;
+            background-color: white;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            border: none;
+            background-color: yellowgreen;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="컨테이너">
+    <h1>피자 주문하기</h1>
+
+    <form>
+        <div class="피자종류">피자 선택 :
+        <label for="피자선택">
+          <input id="고르곤졸라" type="checkbox" />
+          <img src="../이미지들/고르곤졸라.png" />
+
+          <input id="페퍼로니" type="checkbox" />
+          <img src="../이미지들/페퍼로니.png" />
+        </label>
+      <div class="토핑">
+        <label>토핑선택 : </label>
+        <select name="토핑">
+          <option>기본</option>
+          <option>페퍼로니</option>
+          <option>야채</option>
+          <option>치즈</option>
+          <option>햄</option>
+        </select>
+      </div>
+      <div class="크기">
+        <label>크기 선택 : </label>
+        <input type="radio" />Small <input type="radio" />Medium
+        <input type="radio" />Large
+      </div>
+      <div class="음료">
+        <label>음료수 선택 :</label>
+        <input type="checkbox" /> 콜라 <input type="checkbox" /> 사이다
+        <input type="checkbox" /> 맥주
+      </div>
+      <div class="주소">
+        <label>배달 주소 : </label>
+        <textarea rows="3" cols="40"></textarea>
+        <small>도서/산간 지역은 배달비 3,000원 부과됩니다.</small>
+      </div>
+      <button>주문하기</button>
+    </form>
+</div>
+</body>
+</html>
