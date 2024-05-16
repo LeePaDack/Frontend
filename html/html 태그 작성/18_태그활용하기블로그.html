@@ -1,0 +1,88 @@
+<!-- 주의 ! ! 사진이나 동영상 음악 파일 100MB 이상은 깃허브에 올라가지 않음 
+              현재는 100MB 이상 사용 X
+-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>이미지 텍스트 비디오를 활용한 블로그</title>
+    <meta charset="UTF-8" />
+    <style>
+      p{
+        font-size: 20px; /* 폰트 글자 크기 조절 */ 
+        font-weight: 600; /* 글자 굵기 조절 숫자로는 최대 900 */
+      }
+      body{
+        margin: 0 auto;
+        text-align: center;
+      }
+      table{
+        border: 2px solid rgba(252, 219, 31, 0.554) ;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 50%; 
+      }
+      img{
+        width: 80%;
+      }
+      th,td{
+        border: 2px solid rgba(252, 219, 31, 0.554);
+        padding: 10px;
+        text-align: center;
+      }
+      th{
+        background-color: rgba(126, 134, 247, 0.605);
+        color: white;
+      }
+      tr{
+        background-color: #a5dcff6b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>즐거운 나라😀</h1>
+    <br>
+    <img
+    src="../이미지들/pig.jpg"
+    alt="돼지"
+    />
+    <p>ABCDEFGH</p>
+    <br>
+    <video autoplay muted loop>
+      <source src="../비디오들/돌.mp4" alt="돌" type="video/mp4">
+
+    </video>
+    <p><em>블로그에 오신걸 환영합니다</em></p>
+    <table>
+      <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <th>방문일</th>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>홍길동</td>
+        <td>2024/05/09</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>박철수</td>
+        <td>2024/05/08</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>강영희</td>
+        <td>2024/05/07</td>
+      </tr>
+    </table>
+
+
+  </body>
+  <foot>
+    <!-- &copy; 는 © 모양을 나태내는 표시 (주로 회사를 표현할 때 사용) -->
+    &copy; 2024 간단한 블로그 All rights reserved <br> 환상의나라 주식회사
+
+
+  </foot>
+
+</html>
