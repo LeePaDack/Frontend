@@ -1,0 +1,73 @@
+.헤더 {
+    background-color: #ff6b81;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  .푸터 {
+    background-color: #ff6b81;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  .네비게이션 {
+    background-color: #ff6b81;
+    margin: -20px; /* 위여백 간격조정 - : 간격 줄어듦  + 간격 넓어짐 */
+    text-align: center;
+  }
+  .네비게이션 ul {
+    list-style-type: none;
+  }
+  .네비게이션 ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .네비게이션 ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .메인 {
+    padding: 20px;
+    display: flex;
+  }
+  .제품사진 {
+    border: 1px solid black;
+    padding: 20px;
+    /* 태그 아래로 공백이 필요할 때 작성 */
+    margin-bottom: 20px;
+    /* 태그 오른쪽으로 공백이 필요할 때 작성 */
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px grey;
+  }
+  .제품사진 img {
+    width: 100%;
+    height: auto;
+  }
+  /* 마우스를 버튼 위에 올리기 전 모습 */
+  .제품사진 button {
+    background-color: #4dcffa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    /* 버튼 위에 마우스를 올렸을 때 마우스 아이콘 변경 */
+    cursor: pointer;
+  }
+  .제품사진 button:hover {
+    background-color: black;
+    color: white;
+  }
+  /* 마우스를 버튼 위에 올린 후 모습 */
+
+  /* 상세보기 파트 */
+  .가격{
+    font-size: 20px;
+    color: red;
+}
+.상세보기{
+  margin: 0 auto;
+}
