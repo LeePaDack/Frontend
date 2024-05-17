@@ -63,11 +63,138 @@
   }
   /* 마우스를 버튼 위에 올린 후 모습 */
 
-  /* 상세보기 파트 */
+  /* ************************ 상세보기 파트 */
   .가격{
     font-size: 20px;
     color: red;
 }
 .상세보기{
   margin: 0 auto;
+}
+
+
+/* *********************** 회사 소개 */
+
+
+header, footer{
+  background-color: aliceblue;
+  text-align: center;
+  padding: 20px;
+}
+nav{
+  background-color: aliceblue;
+  padding: 15px;
+  text-align: center;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+}
+/* main */
+main{
+  width: 80%;
+  margin: 20px auto;
+}
+.소개클래스 { 
+  /* 한 section 이 끝날 때마다 엔터(줄바꿈)처리 */
+  display: block;
+  /* 한 section 이 끝날 때마다 밑으로 간격을 20px 준 것 */
+  margin-bottom: 20px;
+}
+.소개클래스 .블록{
+  border: 2px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+}
+.소개클래스 .블록 img{
+  width: 200px;
+  height: 200px;
+}
+/*
+.소개클래스 .블록:first-child{
+  background-color: #ccc;
+}
+.소개클래스 .블록:last-child{
+  background-color: aliceblue;
+}
+*/
+/* 팀원 소개 섹션 */
+.팀클래스{
+  text-align: center;
+  margin-bottom: 50px;
+  /* margin: 0 0 50px 0;  같은말 */
+}
+.팀클래스 .멤버{
+  /* 세로로 나눠져 있는 div 를 가로로 배치 */
+  display: inline-block;
+  /* 
+  display 에서 inline 만 사용할 경우 가로 길이 설정 X
+  display 에서 inline-block 을 사용할 경우 가로 길이 설정 O
+  */
+  width: 20%;
+  padding: 15px;
+  background-color: rgb(224, 224, 245);
+  border: 2px solid #f2f2f2;
+}
+/*
+.팀클래스 .멤버 1번째 멤버
+darkslategray - background
+
+.팀클래스 .멤버 2번째 멤버
+lightpink - background
+
+.팀클래스 .멤버 3번째 멤버
+lightblue - background
+*/
+/* 팀 클래스 기준으로 h2 또한 자식이기 때문에 h2 팀소개 가 1번이 됨*/
+.팀클래스 .멤버:nth-child(2){
+  background-color: rgb(141, 226, 226);
+}
+.팀클래스 .멤버:nth-child(3){
+  background-color: lightpink;
+}
+.팀클래스 .멤버:nth-child(4){
+  background-color: lightblue;
+}
+
+.팀클래스 .멤버:nth-child(n):hover{
+  /* hover : 어디든 맨 뒤에 붙이면 마우스가 태그 안에 도착한 다음 나올 스타일
+      모든 숫자에 동일한 디자인을 적용하길 원한다면 n 혹은 ,로 추가
+  */
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold; /* 폰트 굵기 작용 */
+  text-shadow: 0 0 15px white;
+/*  box-shadow:  0 0 15px white; 테두리가 없기 때문에 사용 불가 */ 
+}
+/* 팀클래스 밑에 있는 멤버 밑에 있는 img */
+.팀클래스 .멤버 img{
+  width: 100px;
+  border-radius: 50px;
+}
+.픽스된지역{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: fixed;
+/* 어디에 고정 시킬 것인가? */
+bottom: 30px;
+right: 30px;
+background-color: white;
+}
+.픽스된지역 a{   
+width: 100%;
+height: 100%;
+display: block;
+border-radius: 50%;
+text-align: center;
+color: black;
+text-decoration: none;
+line-height: 40px; /* a 태그 두께(a 태그용 높이 설정) */
+/*  
+↓ 드래그 못하게 함
+복사하거나 강조와 같은 표시를 할 수 없게 만드는 것
+특정 부분에서 텍스트 선택을 방지하고 싶을 때 사용
+*/
+user-select: none; /* 사용자가 선택을 못하게 하는 것 */
 }
